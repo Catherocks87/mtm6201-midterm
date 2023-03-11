@@ -50,6 +50,8 @@ table {
 
 /*STYLES FOR MOBILE */
 
+/* General styles */
+
 body {
     background:white;
     font-family: 'Raleway', sans-serif;
@@ -91,9 +93,7 @@ nav {
     font-weight: bold;
 }
     
-.container{
-   padding: 1em;  
-}
+
 
 nav a:link, nav a:visited {
     font-size: 18px;
@@ -118,7 +118,38 @@ li a:hover {
     background-size: cover;
     padding-top: 80px;
     padding-bottom: 80px;
+    animation: slide-in-left 0.5s ease-in-out ;
+	animation: slide-in-left 0.5s ease-in-out ;
 }
+
+ @keyframes slide-in-left {
+    0% {
+      transform: translateX(-1000px);
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-left {
+    0% {
+      transform: translateX(-1000px);
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+
+  /* Styles for cover section */
+  
 
 .container-section{
     background: rgba(241, 241, 241, 0.7);
@@ -140,15 +171,43 @@ li a:hover {
     font-size: 1.7em;    
 }
 
-/* Styles for products section */
 
+
+/* Styles for banner starts here */
 .container-products{
     background: #BE8383;
     color: black;
     padding-top: 150px;
     padding-bottom: 150px;
+    animation: slide-in-right 0.5s ease-out 1s;
+	animation: slide-in-right 0.5s ease-out 1s;
 }
 
+
+ @keyframes slide-in-right {
+    0% {
+    transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+    }
+    100% {
+    transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+    }
+  }
+  @keyframes slide-in-right {
+    0% {
+    transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+    }
+    100% {
+    transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+    }
+  }
 
 .container-products h2{
    color:#F2DE77;
@@ -159,14 +218,27 @@ li a:hover {
     font-size: 2.1em;
  }
 
+ /* Styles for banner ends here */
+
+ /* Styles for products section */
+
+ .cosmetics{
+  gap:10px;
+  background-color: #F2DE77;
+  padding-top: 3em;
+  padding-bottom: 3em;
+ }
+
  .makeup {
     display: flex;
     justify-content: space-between;
     background-color:  white;
     flex-direction:column;
     padding: 1rem;
+    padding-top: 4rem;
     justify-content: center;
     align-items: center;
+     
 }
 
 .makeup p{
@@ -201,6 +273,12 @@ li a:hover {
     padding-left: 1em;
     padding-right: 1em;    
 }
+
+.makeup img{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+}
+
 
 /* Styles for tutorials section */
 
@@ -259,7 +337,6 @@ li a:hover {
 
 
 .container-footer{
-    
     padding-top: 50px;
     padding-bottom: 50px;
     color: white;
@@ -291,8 +368,30 @@ li a:hover {
    color: #BE8383; 
 }
 
+/* Styles for skip links */
 
-  /* DESKTOP STYLES START HERE */
+
+.skip a{ 
+  color: whitesmoke;
+  text-decoration: none;
+  position: absolute;
+  top: -3em;
+  background-color: black;
+  color:#F2DE77;
+  padding: .6em 1em;
+  font-weight: bold;
+}
+
+.skip a:focus{
+  top: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+/* DESKTOP STYLES START HERE */
 
   @media screen and (min-width: 960px) {
   
@@ -302,7 +401,6 @@ nav .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
  }
 
  nav ul {
@@ -312,6 +410,8 @@ nav .container {
 
  img{
     text-align: center;
+   
+    
  }
 
  nav ul li {
@@ -325,7 +425,7 @@ nav .container {
  }
     
   
-  /* Styles for cosmetics section */
+/* Styles for cosmetics section */
   
   .cosmetics {
     display: flex;
@@ -347,7 +447,8 @@ nav .container {
   }
 
   .makeup img{
-    width:100%
+    width:100%;
+    
   }
 
    /* Styles for tutorials section */
@@ -401,6 +502,8 @@ nav .container {
 .icons a{
     text-decoration: none;
 }
+
+/* Styles for skip links */
 
 
 .skip a{ 
