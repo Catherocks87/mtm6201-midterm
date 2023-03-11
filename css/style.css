@@ -119,35 +119,7 @@ li a:hover {
     background-size: cover;
     padding-top: 80px;
     padding-bottom: 80px;
-    animation: slide-in-left 0.5s ease-in-out ;
-	animation: slide-in-left 0.5s ease-in-out ;
 }
-
- @keyframes slide-in-left {
-    0% {
-      transform: translateX(-1000px);
-      transform: translateX(-1000px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  @keyframes slide-in-left {
-    0% {
-      transform: translateX(-1000px);
-      transform: translateX(-1000px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-
 
   /* Styles for cover section */
   
@@ -188,11 +160,9 @@ li a:hover {
  @keyframes slide-in-right {
     0% {
     transform: translateX(1000px);
-    transform: translateX(1000px);
     opacity: 0;
     }
     100% {
-    transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
     }
@@ -200,11 +170,9 @@ li a:hover {
   @keyframes slide-in-right {
     0% {
     transform: translateX(1000px);
-    transform: translateX(1000px);
     opacity: 0;
     }
     100% {
-    transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
     }

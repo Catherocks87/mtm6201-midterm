@@ -123,11 +123,9 @@ li a:hover {
  @keyframes slide-in-top {
     0% {
       transform: translateY(-1000px);
-      transform: translateY(-1000px);
       opacity: 0;
     }
     100% {
-      transform: translateY(0);
       transform: translateY(0);
       opacity: 1;
     }
@@ -135,11 +133,9 @@ li a:hover {
   @keyframes slide-in-top {
     0% {
       transform: translateY(-1000px);
-      transform: translateY(-1000px);
       opacity: 0;
     }
     100% {
-      transform: translateY(0);
       transform: translateY(0);
       opacity: 1;
     }
@@ -218,18 +214,15 @@ li a:hover {
 
   .organize {
     animation: slide-in-right 0.5s ease-out 2s both;
-    animation: slide-in-right 0.5s ease-out 2s both;
   }
 
 
-@-webkit-keyframes slide-in-right {
+@keyframes slide-in-right {
   0% {
-    transform: translateX(1000px);
     transform: translateX(1000px);
     opacity: 0;
   }
   100% {
-    transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
   }
@@ -237,11 +230,9 @@ li a:hover {
 @keyframes slide-in-right {
   0% {
     transform: translateX(1000px);
-    transform: translateX(1000px);
     opacity: 0;
   }
   100% {
-    transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
   }
@@ -251,8 +242,7 @@ li a:hover {
     background-color: #F2DE77;
     padding: 2em 2em;
     border-radius: 8px;
-    margin-bottom: 4em;
-    
+    margin-bottom: 4em;  
   }
 
   .info h3{ 
@@ -266,8 +256,7 @@ li a:hover {
   .info .organize i{
     color: #077438;
     font-size: 1.5em;
-    margin-right: 1em;
-    
+    margin-right: 1em;  
   }
 
 
