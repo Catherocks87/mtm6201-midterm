@@ -108,14 +108,14 @@ nav a:link, nav a:visited {
 li a:hover {
     color: #fff;
     background-color: #BE8383;
-    
+
   }
 
 
 /* Styles for cover section */
 
 .header-cover{
-    background-image: url(/images/collage_cover-1920_x_1280.jpg);
+    background-image: url(../images/collage_cover-1920_x_1280.jpg);
     background-size: cover;
     padding-top: 80px;
     padding-bottom: 80px;
