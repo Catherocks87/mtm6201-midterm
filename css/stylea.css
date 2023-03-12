@@ -48,7 +48,7 @@ table {
 }
 
 /*STYLES FOR MOBILE */
-/* General styles */
+/* General styles for headings and paragraphs */
 
 body {
   background:white;
@@ -93,7 +93,7 @@ nav {
   
 
 
-nav a:link, nav a:visited {
+nav a:link, nav a:visited {  /* This style makes the links of the nav bar change colour */
   font-size: 18px;
   color: #F2DE77;
   text-align: center;
@@ -103,7 +103,7 @@ nav a:link, nav a:visited {
   padding-bottom: 17px;    
 }
 
-li a:hover {
+li a:hover { /* This style makes the links of the nav bar change colour when is hover */
   color: #fff;
   background-color: #BE8383;
 }
@@ -118,22 +118,11 @@ li a:hover {
   background: #BE8383;
   color: black;
   padding: 3em;
-  -webkit-animation: slide-in-top 0.5s ease-out alternate both;
-  animation: slide-in-top 0.5s ease-out alternate both;
+  animation: slide-in-top 0.5s ease-out alternate both; /* Styles animation */
 }
 
 
-@keyframes slide-in-top {
-  0% {
-    transform: translateY(-1000px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes slide-in-top {
+@keyframes slide-in-top {  /* keyframes I used to make the pink banner slide in top of the webpage */
   0% {
     transform: translateY(-1000px);
     opacity: 0;
@@ -144,6 +133,9 @@ li a:hover {
   }
 }
 
+ /* Styles for banner ends here */
+
+  /* Styles for products section */
 .container-products h1{
  color:#F2DE77;
  font-size: 4em;
@@ -160,17 +152,14 @@ li a:hover {
 }
 
 
-/* Products section styles starts here*/
-
-
-section {
+section { 
   height: 90em;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #F2DE77;
 }
-.slider {
+.slider { /* Styles for the container of the slider */
   position: relative;
   width: 300px;
   overflow: hidden;
@@ -188,12 +177,12 @@ padding-right: 5px;
 .images img {
   height: 300px;
   width: 100%;
-  transition: all 0.15s ease;
+  transition: all 0.15s ease; /* Style to apply to every image when it moves */
 }
 .images input {
   display: none;
 }
-.dots {
+.dots { /* Style for the dots*/
   display: flex;
   justify-content: center;
   padding-top: 1em;
@@ -205,37 +194,37 @@ padding-right: 5px;
   border-radius: 50%;
   border: solid black 3px;
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: all 0.15s ease; /* Style for the dots*/
   margin: 5px;
 }
-.dots label:hover {background: #F2DE77;}
-#img1:checked ~ .m1 {
+.dots label:hover {background: #F2DE77;}  /* style to change the colour of the dots when are hover */     
+#img1:checked ~ .m1 { /* pseudocode to makes the images change to the next image when the dot is checked*/ 
   margin-left: 0;
 }
-#img2:checked ~ .m2 {
+#img2:checked ~ .m2 { /* pseudocode to makes the images change to the next image when the dot is checked*/ 
   margin-left: -100%;
 }
-#img3:checked ~ .m3 {
+#img3:checked ~ .m3 { /* pseudocode to makes the images change to the next image when the dot is checked*/ 
   margin-left: -200%;
 }
 
-#img4:checked ~ .m4 {
+#img4:checked ~ .m4 { /* pseudocode to makes the images change to the next image when the dot is checked*/ 
   margin-left: 0;
 }
-#img5:checked ~ .m5 {
+#img5:checked ~ .m5 { /* pseudocode to makes the images change to the next image when the dot is checked*/ 
   margin-left: -100%;
 }
-#img6:checked ~ .m6 {
+#img6:checked ~ .m6 { /* pseudocode to makes the images change to the next image when the dot is checked*/ 
   margin-left: -200%;
 }
 
-#img7:checked ~ .m7 {
+#img7:checked ~ .m7 { /* pseudocode to makes the images change to the next image when the dot is checked*/ 
   margin-left: 0;
 }
-#img8:checked ~ .m8 {
+#img8:checked ~ .m8 { /* pseudocode to makes the images change to the next image when the dot is checked*/ 
   margin-left: -100%;
 }
-#img9:checked ~ .m9 {
+#img9:checked ~ .m9 { /* pseudocode to makes the images change to the next image when the dot is checked*/ 
   margin-left: -200%;
 }
 
@@ -254,14 +243,14 @@ padding-right: 5px;
   margin-bottom: 20px;
   cursor: pointer;
   border-radius: 8px;
-  transition: background-color 0.3s ease;  
+  transition: background-color 0.3s ease; /* Transition to change the colour of the button */ 
 }
 
 a{
   text-align: center;
 }
 
-.button a:hover{
+.button a:hover{ /* this style scale the size of the button when its hover */ 
   transform: scale(1.1);
   background-color: #F2DE77;
 }
@@ -300,7 +289,7 @@ a{
   color: #F2DE77;
 }
 
-.icons a:hover{
+.icons a:hover{ /* This style changes the colour of the icons when are hover */
  color: #BE8383; 
 }
 
@@ -330,11 +319,11 @@ list-style-type: none;
 
 /* DESKTOP STYLES START HERE */
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 960px) { /* This is the breakpoint to desktop size */
   
   /* Basic styles for the navigation bar */
 
-  nav .container {
+  nav .container { /* This style change the position of the items of the nav bar for desktop size */
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -366,7 +355,7 @@ list-style-type: none;
    }
 
 
-   .grid-container{
+   .grid-container{ /* This style display the containers horizontally for desktop size */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;  
@@ -378,7 +367,7 @@ list-style-type: none;
 
    /* Styles for footer section */
 
-   .container-footer{
+   .container-footer{ /* This style display the containers horizontally for desktop size */
     display: flex;
   }
 
@@ -390,7 +379,7 @@ list-style-type: none;
     padding: 1em;   
 }
 
-.icons {
+.icons { /* This style aligns the icons next to the copyright for desktop size */
     display: flex;
     text-align: center;
     justify-content:flex-end;

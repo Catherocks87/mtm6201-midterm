@@ -50,7 +50,7 @@ table {
 
 /*STYLES FOR MOBILE */
 
-/* General styles */
+/* General styles for headings and paragraphs */
 
 body {
     background:white;
@@ -95,7 +95,7 @@ nav {
     
 
 
-nav a:link, nav a:visited {
+nav a:link, nav a:visited { /* This style makes the links of the nav bar change colour */
     font-size: 18px;
     color: #F2DE77;
     text-align: center;
@@ -105,7 +105,7 @@ nav a:link, nav a:visited {
     padding-bottom: 17px;    
 }
 
-li a:hover {
+li a:hover { /* This style makes the links of the nav bar change colour when is hover */
     color: #fff;
     background-color: #BE8383;
 
@@ -152,12 +152,12 @@ li a:hover {
     color: black;
     padding-top: 150px;
     padding-bottom: 150px;
-    animation: slide-in-right 0.5s ease-out 1s;
-	animation: slide-in-right 0.5s ease-out 1s;
+    animation: slide-in-right 0.5s ease-out 1s; /* Styles animation */
+	
 }
 
 
- @keyframes slide-in-right {
+ @keyframes slide-in-right { /* keyframes I used to make the pink banner slide in the right side of the webpage */
     0% {
     transform: translateX(1000px);
     opacity: 0;
@@ -167,16 +167,9 @@ li a:hover {
     opacity: 1;
     }
   }
-  @keyframes slide-in-right {
-    0% {
-    transform: translateX(1000px);
-    opacity: 0;
-    }
-    100% {
-    transform: translateX(0);
-    opacity: 1;
-    }
-  }
+ /* Styles for banner ends here */
+
+  /* Styles for products section */
 
 .container-products h2{
    color:#F2DE77;
@@ -186,10 +179,6 @@ li a:hover {
     color: white;
     font-size: 2.1em;
  }
-
- /* Styles for banner ends here */
-
- /* Styles for products section */
 
  .cosmetics{
   gap:10px;
@@ -228,10 +217,10 @@ li a:hover {
     margin: 30px;
     cursor: pointer;
     border-radius: 8px;
-    transition: background-color 0.3s ease;        
+    transition: background-color 0.3s ease;  /* Transition to change the colour of the button */      
 }
 
-.makeup a:hover{
+.makeup a:hover{  /* this style scale the size of the button when its hover */ 
     transform: scale(1.1);
     background-color: #F2DE77;
 }
@@ -274,10 +263,10 @@ li a:hover {
     margin: 30px;
     cursor: pointer;
     border-radius: 8px;
-    transition: background-color 0.3s ease;        
+    transition: background-color 0.3s ease;  /* Transition to change the colour of the button */       
 }
 
-.container-tutorials a:hover{
+.container-tutorials a:hover {  /* this style scale the size of the button when its hover */ 
     transform: scale(1.1);
     background-color: #fff;
 }
@@ -333,7 +322,7 @@ li a:hover {
     color: #F2DE77;
 }
 
-.icons a:hover{
+.icons a:hover{  /* This style changes the colour of the icons when are hover */
    color: #BE8383; 
 }
 
@@ -362,11 +351,11 @@ ul {
 
 /* DESKTOP STYLES START HERE */
 
-  @media screen and (min-width: 960px) {
+  @media screen and (min-width: 960px) { /* This is the breakpoint to desktop size */
   
 /* Basic styles for the navigation bar */
   
-nav .container {
+nav .container { /* This style change the position of the items of the nav bar for desktop size */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -403,7 +392,7 @@ nav .container {
     align-items: center;
   }
 
-  .cosmetics .makeup:nth-child(1){
+  .cosmetics .makeup:nth-child(1){ /* This style display the containers horizontally for desktop size */
     flex-basis: calc(10% - 1px);
   }
 
@@ -442,12 +431,12 @@ nav .container {
 
    /* Styles for footer section */
 
-  .container-footer{
+  .container-footer { /* This style display the containers horizontally for desktop size */
     display: flex;
 
   }
 
-  .container-footer .copy{
+  .container-footer .copy { /* This style display the containers horizontally for desktop size */
 
     display: flex;
     justify-content: left;
@@ -455,7 +444,7 @@ nav .container {
     padding: 1em;   
 }
 
-.icons {
+.icons { /* This style aligns the icons next to the copyright for desktop size */
     display: flex;
     text-align: center;
     justify-content:flex-end;
@@ -475,7 +464,7 @@ nav .container {
 /* Styles for skip links */
 
 
-.skip a{ 
+.skip a {  
     color: whitesmoke;
     text-decoration: none;
     position: absolute;
@@ -486,7 +475,7 @@ nav .container {
     font-weight: bold;
   }
   
-  .skip a:focus{
+  .skip a:focus { 
     top: 0;
   }
   

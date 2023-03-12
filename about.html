@@ -12,14 +12,14 @@
     <link href="css/stylea.css" rel="stylesheet">
 </head>
 <body>
-  <div class="container-skip" id="top"><!-- html for skip-links-->
+  <div class="container-skip" id="top"><!-- This is the html to create skip links I used this code for accessibility purposes-->
     <ul class="skip">
       <li><a href="#buy">Go to products</a></li>
       <li><a href="#socialmedia">Go to footer</a></li>
     </ul>
 </div>   
 <header>
-    <nav role="navigation"><!-- here starts html for navbar-->
+    <nav role="navigation"><!-- here starts html for navbar, I used links to go to the other pages of my website-->
         <div class="container">
                 <div class="logo">
                   <a href="index.html">
@@ -36,8 +36,8 @@
 
     <div class="header"><!-- here starts html for cover section--> 
       <div class="container-products">
-          <h1 role="heading" aria-level="1">Who are we?</h1>
-          <h2 role="heading" aria-level="2">Know me!</h2>
+          <h1 role="heading" aria-level="1">Who are we?</h1><!-- I used aria-level for the user be able to identify the titles--> 
+          <h2 role="heading" aria-level="2">Know me!</h2> <!-- I used aria-level for the user be able to identify the subtitles--> 
           <h3>I am a fun cosmetic brand
               with eco-friendly
               ingredients and
@@ -48,10 +48,12 @@
       </div><!-- here finish html for cover section-->
 </header>
 
-<section id="buy"><!-- here starts html for products section--> 
+
+<!-- here starts html for products section--> 
+<section id="buy"><!-- this id is part of the skip-links to go specifically to "buy section"--> 
 <div class="grid-container">
-<div class="slider">
-  <div class="images">
+<div class="slider"> <!-- html code to create the container of the slider of images--> 
+  <div class="images"> <!-- html code to create the style of every image of the container--> 
       <input type="radio" name="slide" id="img1" checked>
       <input type="radio" name="slide" id="img2">
       <input type="radio" name="slide" id="img3">
@@ -62,7 +64,7 @@
       <img src="images/eye-palette3-300_x_300.jpg" class="m3" alt="img3">
       
   </div>
-  <div class="dots">
+  <div class="dots">  <!-- html code to create the style of the dots to move images--> 
       <label for="img1"></label>
       <label for="img2"></label>
       <label for="img3"></label>     
@@ -75,8 +77,8 @@
   </div>
 </div>
 
-<div class="slider">
-  <div class="images">
+<div class="slider"><!-- html code to create the container of the slider of images--> 
+  <div class="images"><!-- html code to create the style of every image of the container--> 
       <input type="radio" name="slide" id="img4" checked>
       <input type="radio" name="slide" id="img5">
       <input type="radio" name="slide" id="img6">
@@ -87,7 +89,7 @@
       <img src="images/nail-bottle3-300_x_300.jpg" class="m6" alt="img6">
       
   </div>
-  <div class="dots">
+  <div class="dots"><!-- html code to create the style of the dots to move images-->
       <label for="img4"></label>
       <label for="img5"></label>
       <label for="img6"></label>
@@ -100,8 +102,8 @@
       </a>
   </div>
 </div>
-<div class="slider">
-  <div class="images">
+<div class="slider"><!-- html code to create the container of the slider of images--> 
+  <div class="images"><!-- html code to create the style of every image of the container--> 
       <input type="radio" name="slide" id="img7" checked>
       <input type="radio" name="slide" id="img8">
       <input type="radio" name="slide" id="img9">
@@ -112,7 +114,7 @@
       <img src="images/lipstick3-300_x_300.jpg" class="m9" alt="img9">
       
   </div>
-  <div class="dots">
+  <div class="dots"><!-- html code to create the style of the dots to move images-->
       <label for="img7"></label>
       <label for="img8"></label>
       <label for="img9"></label>
@@ -128,12 +130,12 @@
 </div>
 </section><!-- here ends html for products section--> 
 
-<footer id="socialmedia">
+<footer id="socialmedia"><!-- this id is part of the skip-links to go specifically to "socialmedia"--> 
   <div class="container-footer"><!-- here starts container for footer section-->
       <div class="copy">
       <p>Copyright &copy; This Bae, 2023</p>
       </div>
-      <div class="icons">
+      <div class="icons"><!--I used classes to add icons and  links to go to the social media pages-->
       <a href="https://www.facebook.com/">
       <i class="fa-brands fa-facebook"></i>
       </a>

@@ -50,7 +50,7 @@ table {
 
 /*STYLES FOR MOBILE */
 
-/* General styles */
+/* General styles for headings and paragraphs */
 body {
     background:white;
     font-family: 'Raleway', sans-serif;
@@ -94,8 +94,8 @@ nav {
 }
     
 
-nav a:link, nav a:visited {
-    font-size: 18px;
+nav a:link, nav a:visited { /* This style makes the links of the nav bar change colour */
+    font-size: 18px; 
     color: #F2DE77;
     text-align: center;
     display: block;
@@ -104,7 +104,7 @@ nav a:link, nav a:visited {
     padding-bottom: 17px;    
 }
 
-li a:hover {
+li a:hover { /* This style makes the links of the nav bar change colour when is hover */
     color: #fff;
     background-color: #BE8383;
   }
@@ -115,22 +115,11 @@ li a:hover {
     background: #BE8383;
     color: black;
     padding: 3em;
-    -webkit-animation: slide-in-top 0.5s ease-out alternate both;
-    animation: slide-in-top 0.5s ease-out alternate both;
+    animation: slide-in-top 0.5s ease-out alternate both; /* Styles animation */
 }
 
 
- @keyframes slide-in-top {
-    0% {
-      transform: translateY(-1000px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  @keyframes slide-in-top {
+ @keyframes slide-in-top { /* keyframes I used to make the pink banner slide in the top side of the webpage */
     0% {
       transform: translateY(-1000px);
       opacity: 0;
@@ -213,11 +202,11 @@ li a:hover {
 
 
   .organize {
-    animation: slide-in-right 0.5s ease-out 2s both;
+    animation: slide-in-right 0.5s ease-out 2s both; /* Styles animation */
   }
 
 
-@keyframes slide-in-right {
+@keyframes slide-in-right { /* keyframes I used to make the pink banner slide in the right side of the webpage */
   0% {
     transform: translateX(1000px);
     opacity: 0;
@@ -227,16 +216,7 @@ li a:hover {
     opacity: 1;
   }
 }
-@keyframes slide-in-right {
-  0% {
-    transform: translateX(1000px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
+
 
   .organize ul{
     background-color: #F2DE77;
@@ -260,7 +240,7 @@ li a:hover {
   }
 
 
-  .info .organize{
+  .info .organize{ 
     display:flex;
     justify-content: center;
     flex-flow: column;
@@ -284,7 +264,7 @@ li a:hover {
     font-size: 1em;   
 }
 
-.icons {
+.icons { /* This style aligns the icons next to the copyright for desktop size */
     text-align: center;
     font-size: 2rem;
     padding-right: 10px;
@@ -326,9 +306,9 @@ ul {
 
    /* DESKTOP STYLES START HERE */
 
- @media screen and (min-width: 960px) {
+ @media screen and (min-width: 960px) { /* This is the breakpoint to desktop size */
 
-    nav .container {
+    nav .container { /* This style change the position of the items of the nav bar for desktop size */
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -421,7 +401,7 @@ ul {
         padding: 1em;   
     }
     
-    .icons {
+    .icons { /* This style display the containers horizontally for desktop size */
         display: flex;
         text-align: center;
         justify-content:flex-end;
@@ -462,17 +442,7 @@ ul {
     
 
 
-          
 
 
-    
-
-    
-
-
-
-
-
-
- }    
+ } /* DESKTOP STYLES FINISH HERE *//* DESKTOP STYLES FINISH HERE */
 

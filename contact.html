@@ -12,14 +12,14 @@
     <link href="css/stylec.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container-skip" id="top">
+    <div class="container-skip" id="top"><!-- This is the html to create skip links I used this code for accessibility purposes-->
         <ul class="skip">
           <li><a href="#contact">Go to Contact us</a></li>
           <li><a href="#info">Go to Info</a></li>
         </ul>
     </div>
     <header>
-        <nav role="navigation"><!-- here starts html for navbar-->
+        <nav role="navigation"><!-- here starts html for navbar, I used links to go to the other pages of my website-->
             <div class="container">
                 <div class="logo">
                 <a href="index.html">
@@ -36,37 +36,37 @@
     
     <div class="header"><!-- here starts html for cover section--> 
         <div class="container-questions">
-            <h1 role="heading" aria-level="1">Questions?</h1>
+            <h1 role="heading" aria-level="1">Questions?</h1> <!-- I used aria-level for the user be able to identify the titles-->
         </div>
         </div><!-- here finish html for cover section-->
 </header><!-- here starts html for contact section--> 
-<section id="contact">
+<section id="contact"><!-- this id is part of the skip-links to go specifically to "contact section"--> 
     <div class=contact>
         <h2>Contact us</h2>
         <div class="contact-container">
     <form role="form">
         <label for="name">Name:</label>
-        <input type="text" id="name" placeholder="Full name" aria-label="Name">
+        <input type="text" id="name" placeholder="Full name" aria-label="Name"> <!-- I used aria-level for the user be able to identify the name-->
       
         <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="Your email" aria-label="Email">
+        <input type="email" id="email" placeholder="Your email" aria-label="Email"><!-- I used aria-level for the user be able to identify the email-->
       
         <label for="message">Message:</label>
-        <textarea id="message" aria-label="Message"></textarea>
+        <textarea id="message" aria-label="Message"></textarea><!-- I used aria-level for the user be able to identify message-->
       
         <button type="submit">Submit</button>
       </form>
     </div>   
     </div>  
 </section>
-<section id="info">
+<section id="info"><!-- this id is part of the skip-links to go specifically to "info section"--> 
     <div class="info">
         <h3>Info</h3>  
         <div class="organize"> 
-        <ul itemscope itemtype="https://schema.org/Person">
-        <li itemprop="telephone"><i class="fa-solid fa-phone"></i>(905) 756 8937</li>
-        <li itemprop="Email"><i class="fa-solid fa-envelope"></i>thisbae_cosmetics@thisbae.com</li>
-        <li itemprop="address"><i class="fa-solid fa-location-dot"></i>456 Catherine Street, K2P 687, Ottawa, Ontario</li>
+        <ul itemscope itemtype="https://schema.org/Person"> <!-- html code for schema--> 
+        <li itemprop="telephone"><i class="fa-solid fa-phone"></i>(905) 756 8937</li> <!-- html code for schema telephone--> 
+        <li itemprop="Email"><i class="fa-solid fa-envelope"></i>thisbae_cosmetics@thisbae.com</li> <!-- html code for schema email--> 
+        <li itemprop="address"><i class="fa-solid fa-location-dot"></i>456 Catherine Street, K2P 687, Ottawa, Ontario</li><!-- html code for schema address--> 
         </ul>
         </div>    
     </div> 
@@ -76,7 +76,7 @@
         <div class="copy">
         <p>Copyright &copy; This Bae, 2023</p>
         </div>
-        <div class="icons">
+        <div class="icons"><!--I used classes to add icons and  links to go to the social media pages-->
         <a href="https://www.facebook.com/">
         <i class="fa-brands fa-facebook"></i>
         </a>
